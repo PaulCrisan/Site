@@ -1,0 +1,34 @@
+.app-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.app-images img{
+  max-width: 70%;
+  max-height: 70%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.android-desc{
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.android-desc p {
+  text-align: justify;
+}
+.android-desc a{
+  color: #D30000;
+
+}
+@media (max-width: 600px){
+  .android-desc{
+    padding: 5px;
+    word-spacing:-2px;
+  }
+  .app-images img{
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  }

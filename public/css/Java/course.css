@@ -1,0 +1,22 @@
+.course-cont{
+  width: 80%;
+  /* color: #C7C4CA; */
+  border-radius: 5px;
+  padding: 20px;
+  color: #C7C4CA;
+  margin: 0 auto;
+  font-family:sans-serif;
+  font-size: 1.5vh;
+  text-align: justify;
+  background-color: #273E4D;
+
+
+}
+.course-desc{
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.course-desc p {
+  text-align: justify;
+}

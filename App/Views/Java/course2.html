@@ -1,0 +1,1018 @@
+<p class="western"><strong>I.</strong> <u><strong>Introduction</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">Hello and welcome to the wonderful world of computer programming. As everything you ever learned before, you will go through stages of understanding, most of them filled with frustration at the beginning and excitement at the end. Computer programming has different learning curves, some steeper than others but, from the beginning, you have to remember two things: ANYTHING CAN BE LEARNED as long as you put effort in it and EVERYTHING CAN BE LEARNED QUICKER if you are enjoying it. Lets put that in code shall we?</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>boolean</strong> studentIsEnjoying;</p>
+<p class="western"><strong>int</strong> learnTime = 2;</p>
+<p class="western"><strong>int</strong> quicker = 1;</p>
+<p class="western"><strong>int</strong> totalLearningTime;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (studentIsEnjoying = <strong>false</strong>){</p>
+<p class="western">totalLearningTime = learnTime;</p>
+<p class="western">&nbsp;</p>
+<p class="western">} <strong>else</strong> {</p>
+<p class="western">totalLearningTime = learnTime - quicker;</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">Too soon for that? Of course, we were just having a bit of fun. But even from this simple example you can observe that every logical expression you want to transmit in a programming language needs to be broken down into pieces that the compiler will understand. Let's make an analogy to understand the concept better.</p>
+<p class="western">Your hand is made from muscles, tendons, etc. If you zoom in, you can see they're all made of cells that work together. If you keep zooming in, you end up with elements, atoms and the very tehnical building blocks that those are made of. In a similar manner, every logic or program you will develop, will be made of smaller parts that work together, some basic, some more complex. When you move your hand in a specific way, your brain does a lot of computations to make you hand deliver what you intended to. In a similar manner, the computer will make the computations to compile your program. Remember when you were a baby and found it difficult to use that hand even to put food in your mouth so naturally you ended up with food all over you? We`ve all been there. But here you are now using your keyboard without even looking at it. (sometimes). With practice you can learn to do complicated things.</p>
+<p class="western">So you probably asked yourself why learning Java and what it implies. Java is an OOP which means Object Oriented Programming. Which takes us back to our previous discussion. Imagine a program in Java like a car. Everything in that car is made of parts that fit together and were designed to work together as a functional car. Some of them provide just some functionality to the car but some of them are made even further from other parts that work together. So to simplify, you have objects that do something but some of them are further made from other objects that do something and you can keep going like that depending on the complexity of your objects. In a car all your parts will be made from different materials like aluminium, plastic etc. In Java your building blocks will make use of <strong>primitive types.</strong> You will shape objects from them and make <strong>methods</strong> to give a specific functionality to you objects.</p>
+<p class="western">To conclude our introduction, remember to focus on the &ldquo;Eurika&rdquo; moments and enjoy your learning trip. As a baby programmer you will need to repeat the basics until they become routine. The more you study and think and exercise, the faster you will learn. Remember, even geniuses were and are passionate and hard working people.</p>
+<p class="western">Now lets make the first baby steps and learn how to use Eclipse to wave our hand to the world in a &ldquo;Hello world&rdquo; statement before we cover our face with code food.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>II.</strong> <u><strong>Introduction in Eclipse</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">You will develop your applications in Eclipse. It's here where it will be compiled and executed. You've probably already installed it in you computer so let us run it.</p>
+<p class="western">At the beginning it will ask you in what folder would you like to store your projects. Go with default setting for now. After Eclipse finished loading, a main window will open.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Picture 1:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">On the left side of the screen you will have your files tree. In there you will find all the structure nicely divided into folders. You can see from the connection lines that you have a <strong>package</strong> folder called &ldquo;test&rdquo; which contains you java file <strong>class </strong>called &ldquo;Test&rdquo;. So what is a package? During your learning time, whenever you want to know something, either if you're stuck with a piece of code or you would like to know what something does or is, you need to get used to ask a friend. That friend is Google. There are mountains of topics and answers on the web and help is always available. On most occasions you'll find out that the way to find a solution to your question is to write it the way it popped in you head. Chances are that many others had exactly the same questions in their mind when they started. So let's ask Google &ldquo;what is a package?&rdquo;. From Oracle's Java documentation we find out that:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;A package is a namespace that organizes a set of related classes and interfaces. Conceptually you can think of packages as being similar to different folders on your computer. You might keep HTML pages in one folder, images in another, and scripts or applications in yet another. Because software written in the Java programming language can be composed of hundreds or <em>thousands </em>of individual classes, it makes sense to keep things organized by placing related classes and interfaces into packages.</p>
+<p class="western">The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Its packages represent the tasks most commonly associated with general-purpose programming&rdquo;.&rdquo;</p>
+<p class="western">&nbsp;</p>
+<p class="western">Ok... But what is a class? Well, let's find out.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;In the real world, you'll often find many individual objects all of the same kind. There may be thousands of other bicycles in existence, all of the same make and model. Each bicycle was built from the same set of blueprints and therefore contains the same components. In object-oriented terms, we say that your bicycle is an <em>instance </em>of the <em>class of objects </em>known as bicycles.<strong> A </strong><em><strong>class </strong></em><strong>is the blueprint from which individual objects are created.</strong> &ldquo;</p>
+<p class="western">We will not go in much depth for now about classes. But some things need to be clarified. As you can see, your work space starts with a specific hierarchy. You always have you package first. This way, the compiler knows where to look. That is your company, you might say. Then you have your class. That is one of your factories. You can name them as you please. After all, you're the boss (how lucky you are).</p>
+<p class="western">You will find out later that you can import other classes from ather packages as well. They will be identified by the package name and the class name, again so the compiler knows where to look. Remember what we said about cars and how they're made of parts? And that more complex objects can be made from other objects? Well, if the class is the blueprint from which individual objects are created that means you can import other classes to create in your class a more complex object. You will later import other classes that Java already made them for you. You could have made them yourself but it would take a long loooong time to write and test. Thanks Java!</p>
+<p class="western">Don't worry if the concepts are new and fuzzy in your head. They will make sense later.</p>
+<p class="western">During your learning process you'll hear often about coding style. Java code is <strong>case sensitive</strong>. Also naming everything by your own choice makes reading other people's code (and your own) quite difficult sometimes. Coding style sets some rules so your brain gets accostumed to skim faster through code. If someone tells you to look for a red car (again with cars?) you will be able to search faster for it starting the search from red cars and not all the cars. So pay attention at coding style rules and apply them always.</p>
+<p class="western">Classes names start <strong>always</strong> with upper letter case. Eclipse will let you name them as you want, but some other software will not. Name them as you should. When you will see a name starting with upper letter you will immediately know it's a class.</p>
+<p class="western">Classes <strong>start and end with curly brackets</strong>. Imagine you've won at a casino table. You lean forward and grab your winnings with bot of you arms. It's so much money you have to spread your hand widely. Everything between you hands is yours. Similarly, <strong>every piece of code you write has to sit inside the curly brackets of your class</strong>.</p>
+<p class="western">Your object which is created with the class will have specific qualities or utilities. These are organized with the help of <strong>methods</strong>. Methods <strong>always</strong> sit inside the curly brackets of your class. When you first open Eclipse you will find the <strong>main method</strong>. This is a special method which is used to start execution of any Java program. You will write your code that needs to be compiled inside the curly brackets of the main method. All methods have their own curly brackets where they contain their own code. When you start learning it can be useful to recognize methods for the parathesis that come after their name. As you can see in Picture 1 the structure is represented as:</p>
+<p class="western">package;</p>
+<p class="western">class<strong>{</strong></p>
+<p class="western">method() <strong>{</strong></p>
+<p class="western"><strong>}</strong></p>
+<p class="western"><strong>}</strong></p>
+<p class="western">&nbsp;</p>
+<p class="western">As coding style, the name you give to your methods always start with a lower case.</p>
+<p class="western">In Picture 1, inside the red square you can see a play type button. You press that when you want to run your code. Also, the shortcut for it is Ctrl + F11.</p>
+<p class="western">You can create a new package by right clicking on the folder and choosing <strong>new &rarr; package</strong>.</p>
+<p class="western">Your newly built package icon inside the explorer tree will be transparent because it contains nothing. If you right click on your newly made package icon you can create a new class by <strong>right click &rarr; new &rarr; Class</strong>. Pick a name for your class. Remember that the name has to start with upper case letter. You can choose your newly made class to contain a main method or not by selecting or unselecting the option &ldquo;public static void main (String[] args)&rdquo;.</p>
+<p class="western">Now that we have an idea of what's going on in Eclipse let's run a simple command.</p>
+<p class="western">Write System.<em><strong>out</strong></em>.println("Hello world!"); , inside the curly brackets of the main method and press &ldquo;run&rdquo; button.</p>
+<p class="western">You will see the result in the bottom window in a form of text saying &ldquo;Hello world!&rdquo;. Great!</p>
+<p class="western">To recap what you must remember:</p>
+<p class="western"><strong>Packages contain multiple classes and resources bundled together. </strong></p>
+<p class="western"><strong>Inside the packages you have your class(classes) whose names start with upper case letter.</strong></p>
+<p class="western"><strong>Only inside the curly brackets of the class code is written. </strong></p>
+<p class="western"><strong>You run code that is written inside the curly brackets of the main method. </strong></p>
+<p class="western"><strong>Methods names start with lower case letters, followed with parenteshis and curly brackets after paranthesis.</strong></p>
+<p class="western">&nbsp;</p>
+<p class="western">Don't botter if you don't fully understand the concepts. You're not suppose to. By repetition and exercise it will slowly come clear to you. Remember the simple rules and get familiar with Eclipse look and feel. You can customise your windows and arrange them if you want. Also, if you press <strong>Help &rarr; Welcome </strong>you will find an introduction and tutorials.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>III.</strong> <u><strong>Primitive types and String</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">Remember those building blocks we discussed earlier? Well, here they are. Primitive types are designed to hold a certain type of data. In Java we have the following primitive types.</p>
+<p class="western">To store numbers :</p>
+<p class="western"><strong>byte</strong>: The <code class="western">byte </code>data type is an 8-bit signed two's complement integer. It has a minimum value of -128 and a maximum value of 127 (inclusive)</p>
+<p class="western"><strong>short</strong>: The <code class="western">short </code>data type is a 16-bit signed two's complement integer. It has a minimum value of -32,768 and a maximum value of 32,767 (inclusive).</p>
+<p class="western"><strong>int</strong>: By default, the <code class="western">int </code>data type is a 32-bit signed two's complement integer, which has a minimum value of -231 and a maximum value of 231-1.</p>
+<p class="western"><strong>long</strong>: The <code class="western">long </code>data type is a 64-bit two's complement integer. The signed long has a minimum value of -263 and a maximum value of 263-1.</p>
+<p class="western"><strong>float</strong>: The <code class="western">float </code>data type is a single-precision 32-bit IEEE 754 floating point</p>
+<p class="western"><strong>double</strong>: The <code class="western">double </code>data type is a double-precision 64-bit IEEE 754 floating point.</p>
+<p class="western">Take a long look at them so you know they exist. You don't need to remember their range. Complex application might use a lot of memory at run time, computing many values. Depending on the primitive used, the system will allocate a certain ammount of memory to store your variables. When a lot of them are in use, picking the right type might be essential. But most of the time, especially at the beginning, you will make use mostly of <strong>int and double</strong>. Let's give them a value with the equal sign:</p>
+<p class="western"><strong>int</strong> mountainHeight = 2584;</p>
+<p class="western"><strong>double</strong> pocketMoney = 13.34;</p>
+<p class="western">&nbsp;</p>
+<p class="western">Using the &ldquo;=&rdquo; sign and giving them a value is called that they were &ldquo;initialized&rdquo;. <strong>Giving a value to a variable is called to &ldquo;initialize&rdquo;. Creating a new object is called to &ldquo;instantiate&rdquo;. Do not confuse the two terms. </strong>You will find out later that you can use a variable without initializing it from the beginning. You can declare it first and give it a value later when you need it to store a value. Remember that Java syntax is case sensitive, you can't write Int instead of int, it will give you a warning. As code style rules apply, the name of the variable has to start with lower case letter. Is a good rule of thumb to use descriptive names, easily understood. It will help you and others when many variables are in use as it makes the code more easy to follow, identify and know what the variables were designed to store. When using multi-words to name a variable, again, coding style requests the use of <strong>camel case. </strong>Words like &ldquo;food for brain&rdquo; will be written &ldquo;foodForBrain&rdquo;. Internal words will start with upper letters and end up looking like a camel's hump. Hence the word &ldquo;camel case&rdquo;.</p>
+<p class="western">Let's get back to our primitives and what to remember about them.</p>
+<p class="western"><strong>int </strong>will store quite a big number, probably as big as you will need at first. You don't need to worry yet about the memory usage.</p>
+<p class="western"><strong>double </strong>will also store a big enough number and will give you, on top, the posibility to store a decimal value to be more precise.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> Booleans</strong> store a &ldquo;<strong>true&rdquo; </strong>and &ldquo;<strong>false&rdquo; </strong>value. You might find them intriguing at first, but you will see, they come in handy. We use booleans in every day life, all the time. You stop or go at the traffic light if is green or red. You decide to stay inside if it's raining or not. These are all variants of events that depend on two values, in one state or the other. By default, a boolean type will be set on a <strong>false</strong> value unless initialized otherwise.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>boolean</strong> isComingAtTheParty; will be false by default</p>
+<p class="western"><strong>boolean</strong> isComingAtTheParty = <strong>true</strong>; will be initialized false</p>
+<p class="western">&nbsp;</p>
+<p class="western">You might have noticed by now that every declaration is ended by &ldquo;<strong>;</strong>&rdquo;. Apart from methods and classes, every declaration has to be ended with &ldquo;<strong>;</strong>&rdquo;. You can think of it this way: methods and classes end with the closing curly bracket, everything else with &ldquo;<strong>;</strong>&rdquo;. This way, the compiler knows when things finish and other things start. Eclipse will give you warnings when it thinks something is wrong as shown in Picture 2. It will highlight the spotted error or warning. Most of the time you can ignore the warnings. Eclipse doesn't know you're still in the playing stage of writing code. Is not the case with error warnings. The compiler will throw you a red angry exception if you try to run the code. Let's not upset the compiler.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Picture 2</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">So we've found out that we can store a number, we can make a decision based on a true or false value. But what about text? We can't store a John's name in a number can we? No, of course not. That's were <strong>Strings</strong> come in place. Strings are special. They're a bit more sophisticaded as they're already an object and can do more than store a text. They have methods that can give you extra information about the text they store. Normally, as you will find out later, every object needs to be created from it's template with the keyword <strong>new. </strong>String is an object but has a special treatment. In order to save memory Strings were designed to be flexible and re-usable. So we can use a String as we would with a primitive type. And get the benefits of an object.</p>
+<p class="western">&nbsp;</p>
+<p class="western">String studentName = "John";</p>
+<p class="western">String shout = "We are all here!";</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">You can observe several things. Firstly, Eclipse already treats the String different by not color coding it like a primitive type. Secondly, Strings are written with the first letter as an upper case letter. To invoke a method from an object you write the dot &ldquo;.&rdquo; sign after the name of the object. Write your Strings from above, in Eclipse, inside the main method. Write the name of one of the Strings again and add a dot &ldquo;.&rdquo; sign.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Picture 3</p>
+<p class="western">&nbsp;</p>
+<p class="western">Yes. Those are all the mothods available from that String. Classy. String is a cool object.</p>
+<p class="western">&nbsp;</p>
+<p class="western">You will always call a method on an object with the <strong>dot &ldquo;.&rdquo;, after it's NEW name</strong>. We will not go at great depth about methods or objects right now, there is plenty to talk later. What is important to remember at this point is that Strings store text and that Strings have built-in methods that can help manipulate your Strings to do stuff with them. Java has lots of classes and methods that are design to help you so you wouldn'd have to build eveything from scratch. They are done the same way you will do yours, and once you will create your own objects and methods, Eclipse will suggest them to you when you call them with the &ldquo;.&rdquo; sign, the same manner as the built-in ones.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>IV.</strong> <u><strong>System.out.print() method</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">So, we have numbers and text to store information. How do we see a result when we put them to work? As we said before, we get help from Java with the means of &ldquo;System.out.print()&rdquo;. Remember the dot &ldquo;.&rdquo; sign? In Java it means that a method is called, remember? What about the names that start with upper case letter? Is a class isn't it? So, if you brake &ldquo;System. Out.print()&rdquo; into pieces what we could deduct?</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;<strong>System.out&rdquo; object, </strong>created from System class calls with <strong>&ldquo;.&rdquo; </strong>a method named <strong>&ldquo;print()&rdquo;</strong></p>
+<p class="western">&nbsp;</p>
+<p class="western">It is a very simplified explanation and not very tehnical for easier understanding. Because it was build in the core of Java with helping you in mind, of course it was tweaked and perfected with everything available so the more tehnical description is harder for a novice to understand. The more exact description will sound like:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>System </strong>is a final class from java.lang package . <strong>out</strong> is the reference of PrintStream class and a static member of System class. <strong>print()</strong> is a method of PrintStream class.</p>
+<p class="western">&nbsp;</p>
+<p class="western">You can choose both explanations to complete your understanding about how Java works. What is important to remember is that you will use classes and methods that come with Java and are designed to use when needed. Some of them have more general use and some more specific. But let's go back for now to how we can check visually our compiled result.</p>
+<p class="western">&nbsp;</p>
+<p class="western">We already know that &ldquo;System.out.print()&rdquo; exists. But What does it do? The method <strong>print()</strong> will print on the <strong>same line</strong> <strong>continously </strong>on the bottom window where the compiled code will apper (it might be in a different place than bottom if you change the default layout of your windows). The second method available from &ldquo;out&rdquo; refrence of PrintStream class is <strong>println()</strong>. This method will print <strong>one line and then jump to the next line. </strong>You will use &ldquo;println&rdquo; more often because you will want to see a result one beneath the other and not in continous line. Let's try some examples. Write inside the main method's curly brackets:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>public</strong> <strong>static</strong> <strong>void</strong> main(String[] args) {</p>
+<p class="western">// <strong>TODO</strong> Auto-generated method stub</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Hello world");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Nice to meet you");</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Hello world");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Nice to meet you");</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">Now try again, this time adding an empty println();</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>public</strong> <strong>static</strong> <strong>void</strong> main(String[] args) {</p>
+<p class="western">// <strong>TODO</strong> Auto-generated method stub</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Hello world");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Nice to meet you");</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Hello world");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Nice to meet you");</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">Have you seen the diffrence? Good. Strings will always contain text between quote marks (&ldquo;&rdquo;). White space between written instructions does <strong>not </strong>matter in Java so if you want to have a legible text from two statements you can add empty Strings (&ldquo; &ldquo;) that contain only space. You can see from the previous example that the two print() methods looked messy when displayed. Let's fix that. Write them again, this time adding another print() method with a String containing only one space (&ldquo; &ldquo;).</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Hello world");</p>
+<p class="western">System.<em><strong>out</strong></em>.print(" ");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Nice to meet you");</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Hello world");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Nice to meet you");</p>
+<p class="western">&nbsp;</p>
+<p class="western">Much better! &ldquo;Hello world&rdquo; was separated from &ldquo;Nice to meet you&rdquo; by a character space from the in between String.</p>
+<p class="western">You will use plenty of time the println() method to display the results. Eclipse knows that, and to help you save time it makes available a shortcut.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Write down after the last examples the word &ldquo;syso&rdquo;. Leave the cursor where the word ends, without pressing space. Press <strong>Ctrl + Space</strong>. Suggestion dialog will appear. Press <strong>Enter</strong>. Congratulation! You saved your time writing the whole statement in a moment. All you need is to write inside the methods parathesis what you want to display. Remember that sometimes people will refer to &ldquo;System.out.println&rdquo; as &ldquo;syso&rdquo;. Do not get confused. &ldquo;syso&rdquo; is the shortcut way to write and somethimes to say the whole statement. We are all lazy somethimes. As a suggestion, write at the beginning without the shortcut to get familiar with the words. When you think you're ready, use the shortcut to save time.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Exercises 1:</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.1 Arrange the following in the correct order.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Hello world");</p>
+<p class="western"><strong>public</strong> <strong>static</strong> <strong>void</strong> main(String[] args) {}</p>
+<p class="western"><strong>package</strong> test;</p>
+<p class="western"><strong>public</strong> <strong>class</strong> Test {}</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.2 Arrange the following in the correct order and discover what is missing.</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.</p>
+<p class="western"><strong>package</strong> test</p>
+<p class="western">("Hello world");</p>
+<p class="western">Test {</p>
+<p class="western"><em><strong>out</strong></em>.println</p>
+<p class="western"><strong>public</strong> <strong>static</strong> <strong>void</strong> main(String[] args)</p>
+<p class="western"><strong>public</strong> <strong>class</strong> Test {}</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.3 Inside your working folder from explorer tree create a new package named &ldquo;myProject&rdquo; with a new class inside with a name of your desire. Create the new class with a main method inside.</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.4 Create the following outcome text:</p>
+<p class="western">&nbsp;</p>
+<p class="western">I</p>
+<p class="western">will</p>
+<p class="western">become</p>
+<p class="western">a</p>
+<p class="western">great</p>
+<p class="western">programmer</p>
+<p class="western">&nbsp;</p>
+<p class="western">after placing the words correctly in the following code.</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("");</p>
+<p class="western">Run it to test your results.</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.5 You have the following Strings (copy them inside main method):</p>
+<p class="western">&nbsp;</p>
+<p class="western">String john = "John";</p>
+<p class="western">String mark = "Mark";</p>
+<p class="western">String alice = "Alice";</p>
+<p class="western">String occupation = " is a programmer";</p>
+<p class="western">&nbsp;</p>
+<p class="western">Place the Strings inside System.out statements using <strong>only</strong> their identifiers(their names), and print() and println() methods, to get the following result:</p>
+<p class="western">&nbsp;</p>
+<p class="western">John is a programmer</p>
+<p class="western">Mark is a programmer</p>
+<p class="western">Alice is a programmer</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.6 Assign to the following variables:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number =?;</p>
+<p class="western"><strong>double</strong> decimalNumber = ?;</p>
+<p class="western">&nbsp;</p>
+<p class="western">the following numbers:</p>
+<p class="western">&nbsp;</p>
+<p class="western">3 and 3.20</p>
+<p class="western">&nbsp;</p>
+<p class="western">use System.out to show them and run it. Try writing System.out statement with &ldquo;syso&rdquo; shortcut.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.7 Copy following variables:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number =3;</p>
+<p class="western">String myDog = "my dog is";</p>
+<p class="western">String bigger = "bigger";</p>
+<p class="western">String times = "times";</p>
+<p class="western">and use them in &ldquo;System.out.println()&rdquo; statement to get the following result:</p>
+<p class="western">&nbsp;</p>
+<p class="western">my dog is</p>
+<p class="western">3</p>
+<p class="western">times</p>
+<p class="western">bigger</p>
+<p class="western">&nbsp;</p>
+<p class="western">Use &ldquo;System.out.print()&rdquo; to get the same result but on a single line. Add another variable:</p>
+<p class="western">String empty = " "; in a System.out.print() for the empty space needed between words.</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.8 Copy following variables:</p>
+<p class="western">&nbsp;</p>
+<p class="western">String line = "-----";</p>
+<p class="western">String plus = "+";</p>
+<p class="western">String empty = " ";</p>
+<p class="western">&nbsp;</p>
+<p class="western">Use them to create the following pattern:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">+-----+</p>
+<p class="western">+ +</p>
+<p class="western">+-----+</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.9 Change the results in previous exercise and add variables to have your initials inside the rectangle.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>V. </strong> <u><strong>Arithmetical operators</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">We can use arithmetical operators the same way they are used in algebra. In Java, we have the following basic operators:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;+&rdquo; sign for adding</p>
+<p class="western">&ldquo;-&rdquo; sign for substracting</p>
+<p class="western">&ldquo;/&rdquo; sign for dividing</p>
+<p class="western">&ldquo;*&rdquo; for multiplication</p>
+<p class="western">&nbsp;</p>
+<p class="western">These operators can be used for numbers or Strings. Example:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 4;</p>
+<p class="western"><strong>double</strong> moneyEarned = 3.40;</p>
+<p class="western">String name = "John";</p>
+<p class="western">String profession = "painter";</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(profession +" " + name + " " + "earned" + " " + moneyEarned + " " + "for" + " " + number + " " + "paintings");</p>
+<p class="western">&nbsp;</p>
+<p class="western">Observe that in previous exercises we used a separate Syste.out.print() to insert space between Strings in order to make the result inteligible. With the adding sign we can <strong>concatenate </strong>several Strings adding them toghether, or we can concatenate with an empty space String to make separation between them or other type of variable.</p>
+<p class="western">&nbsp;</p>
+<p class="western">To show examples of other signs we can add extra variables.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 4;</p>
+<p class="western"><strong>double</strong> moneyEarned = 3.40;</p>
+<p class="western">String name = "John";</p>
+<p class="western">String profession = "painter";</p>
+<p class="western"><u>String </u><u>moneyPerPainting</u><u> = </u><u>"John earned for each painting: "</u><u>;</u></p>
+<p class="western"><u>String </u><u>allMoneyEarned</u><u> = </u><u>"John earned for all his paintings: "</u><u>;</u></p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(profession +" " + name + " " + "earned" + " " + moneyEarned + " " + "for" + " " + number + " " + "paintings");</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(moneyPerPainting + number/moneyEarned);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(allMoneyEarned + number*moneyEarned);</p>
+<p class="western">&nbsp;</p>
+<p class="western">We use also couple of operators that you might not have been so familiar with.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;%&rdquo; sign for modulus</p>
+<p class="western">&ldquo;++&rdquo; sign for increment</p>
+<p class="western">&ldquo;--&rdquo; sign for decrement</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>Modulus </strong>is used to divide left hand operand with right hand operand and returns remainder.</p>
+<p class="western">It means that if we calculate 5%3 the result is 2. That's because 3 can fit inside 5 one time so the remainder is 2. You can think of it as a divider. It will do the aritmethics between two numbers just like &ldquo;/&rdquo; but instead of showing you the result from dividing the two numbers, the result will be the remainder of the two. This gives you some handy applications.</p>
+<p class="western">For example, you can use the modulus against number 10 to get the last digit of any number:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> int</strong> aNumber = 356;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(aNumber%10);</p>
+<p class="western">&nbsp;</p>
+<p class="western">The result will be 6. That's because dividing a number by 10 will shift a comma by one position so the remainder will be exactly the last digit. 356/10 = 35,6 Remainder = 6 Magic!</p>
+<p class="western">&nbsp;</p>
+<p class="western">Another useful application of modulus is checking if a number is odd or not. If you use modulus gainst number 2 it will give you a 0 result if the number is even or a remainder is an odd number.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> ``int</strong> evenNumber = 356;</p>
+<p class="western"><strong>int</strong> oddNumber = 357;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(evenNumber%2 + " " + oddNumber%2);</p>
+<p class="western">&nbsp;</p>
+<p class="western">The result will be 0 and 1. Later on we will learn about an &ldquo;if&rdquo; clause. You can use it in combination with modulus to do a check on a number . This way, you will be able to do something depending on the 0 or 1 result.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>Increment</strong> sign is pretty straightforward. It will increment the value of the operand by 1.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 20;</p>
+<p class="western"><strong>double</strong> decimalNumber = 20.22;</p>
+<p class="western">number++;</p>
+<p class="western">decimalNumber++;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(number + " and " + decimalNumber);</p>
+<p class="western">&nbsp;</p>
+<p class="western">The two numbers were initialized by a value and then incremented with 1. Results will be 21 for int and 21.22 for double variables. Increment operator is handy when a certain variable is used as a counter or more often when needed to iterate trough an array(about which will learn later on)</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>Decrement </strong>sign is the mirror version of the increment one.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 20;</p>
+<p class="western"><strong>double</strong> decimalNumber = 20.22;</p>
+<p class="western">number--;</p>
+<p class="western">decimalNumber--;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(number + " and " + decimalNumber);</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>VI.</strong> <u><strong>Relational operators</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">In Java you can use the following relational operators:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;==&rdquo; equal to</p>
+<p class="western">&ldquo;==&rdquo; will check if the value of two operands are equal or not, if yes then condition becomes true</p>
+<p class="western">&nbsp;</p>
+<p class="western">As learned until now, a single &ldquo;=&rdquo; sign will assing a certain value. When used twice, &ldquo;==&rdquo; it turns intro a value check. Example:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> int</strong> number = 10;</p>
+<p class="western"><strong>int</strong> secondNumber = 10;</p>
+<p class="western"><strong>if</strong>(number == secondNumber){//do something}</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;!=&rdquo; not equal</p>
+<p class="western">&ldquo;!=&rdquo; represents the opposite of &ldquo;==&rdquo; and is used to check if the value is <strong>not </strong>equal to another value.</p>
+<p class="western">Example:</p>
+<p class="western"><strong>int</strong> number = 10;</p>
+<p class="western"><strong>int</strong> secondNumber = 10;</p>
+<p class="western"><strong>if</strong>(number != secondNumber){//do something}</p>
+<p class="western">&nbsp;</p>
+<p class="western">Appart from these we have the more familiar sets of operators:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;&gt;&rdquo; greater than <strong>if</strong>(number &gt; secondNumber){//do something}</p>
+<p class="western">&ldquo;&lt;&rdquo; less than <strong>if</strong>(number &lt; secondNumber){//do something}</p>
+<p class="western">&ldquo;&gt;=&rdquo; greater than or equal to <strong>if</strong>(number &gt;= secondNumber){//do something}</p>
+<p class="western">&ldquo;&lt;=&rdquo; less than or equal to <strong>if</strong>(number &lt;= secondNumber){//do something}</p>
+<p class="western">&nbsp;</p>
+<p class="western">Relational operators will be used in a certain clause and not as a stand alone operation because they imply a question, a condition in check.</p>
+<p class="western">&nbsp;</p>
+<p class="western">When comparing two Strings you have to use the equals(Object anObject) method. Remember that Strings were basically an object. This method compares this String to the specified object. The result is true if and only if the argument is not null and is a String object that represents the same sequence of characters as this object. Example:</p>
+<p class="western">&nbsp;</p>
+<p class="western">String car = "car";</p>
+<p class="western">String car2 = "car";</p>
+<p class="western"><strong>if</strong>(car.equals(car2)){</p>
+<p class="western">//do something</p>
+<p class="western">}</p>
+<p class="western">Remember that Java is case sensitive. &ldquo;car &ldquo; will not be equal to &ldquo;Car&rdquo;.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>VII.</strong> <u><strong>Logical operators</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">We have the following logical operators:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;&amp;&amp;&rdquo; logical AND</p>
+<p class="western">Used in multiple conditions that need to be checked together. Example:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 10;</p>
+<p class="western"><strong>int</strong> secondNumber = 10;</p>
+<p class="western"><strong>int</strong> thirdNumber = 12;</p>
+<p class="western"><strong>int</strong> forthNumber = 30;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong>(number &lt;= secondNumber <strong>&amp;&amp;</strong> thirdNumber &gt;= forthNumber){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("true");</p>
+<p class="western">}</p>
+<p class="western">In this example compiler will not print &ldquo;true&rdquo; as one of the conditions is not true.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&ldquo;||&rdquo; logical OR</p>
+<p class="western">Used in multiple conditions when checking if one <strong>or </strong>the other comply to the request.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 10;</p>
+<p class="western"><strong>int</strong> secondNumber = 10;</p>
+<p class="western"><strong>int</strong> thirdNumber = 12;</p>
+<p class="western"><strong>int</strong> forthNumber = 30;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong>(number &lt;= secondNumber <strong>||</strong> thirdNumber &gt;= forthNumber){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("true");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">In this example compiler will print &ldquo;true&rdquo; as one of the conditions is true.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>VIII. </strong><u><strong>Conditional clause &ldquo; if &rdquo;</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">Previously, we already have observed the use of an &ldquo;if&rdquo; clause when conditions had to be checked.</p>
+<p class="western">The main method, where the compiled code goes, does the calculations in a descending way. <strong>It starts from the top and goes down until the closing semicolon</strong>. When the compiler hits an &ldquo;if&rdquo; clause it checks for the condition. If the condition is fulfilled, it enters the body of the &ldquo;if&rdquo; clause and compiles the code that is inside. Similarly with checking your pokets. You tap all your pockets from the outside looking for your keys. If you feel there is something in one of your pockets you go ahead and get your keys out. (unless you have other things in your pockets then your apporach was wrong)</p>
+<p class="western">&nbsp;</p>
+<p class="western">Structure of an &ldquo;if&rdquo; clause is as following:</p>
+<p class="western">&nbsp;</p>
+<p class="western">if(condition){</p>
+<p class="western">//do something;</p>
+<p class="western">}</p>
+<p class="western">In other words if the condition inside the parathesis is true the compiler will go inside the curly brackets and take into account the code that lies in there. Example:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 10;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (number &lt;10){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is smaller than 10");</p>
+<p class="western">}</p>
+<p class="western">Of course number is not smaller than 10 so the compiler will not enter the body and print the statement.</p>
+<p class="western">Let's add another &ldquo;if&rdquo;:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 10;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (number &lt;10){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is smaller than 10");</p>
+<p class="western">}<strong>if</strong> (number ==10){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is equal to 10");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">This time the second condition was true and &ldquo;number is equal to 10&rdquo; will be printed out. Coding style suggests to write the first semicolon in the &ldquo;if&rdquo; clause after the condition, and the closing semicolon under the &ldquo;if&rdquo; This way the code is more legible. As a suggestion, is a good practice to write the opening and closing semicolon together and then press enter with the cursor between them. This way you don't get confused when you forgot the closing semicolon and you do not know where.</p>
+<p class="western">&nbsp;</p>
+<p class="western">In the previous example you had 2 &ldquo;if&rdquo; clauses to check. Let's add another one.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (number &gt; 10){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is greater than 10");</p>
+<p class="western">}</p>
+<p class="western">Of course &ldquo;number is not greater than 10, it will not print the message out. Having multiple simple &ldquo;if&rdquo; clauses works but is not good practice. Normally you would use an &ldquo;else if&rdquo; clause. Let's change the code to suit best.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 10;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (number &lt; 10) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is smaller than 10");</p>
+<p class="western">}</p>
+<p class="western"><strong>else</strong> <strong>if</strong> (number == 10) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is equal to 10");</p>
+<p class="western">}</p>
+<p class="western"><strong>else</strong> <strong>if</strong> (number &gt; 10) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is greater than 10");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">Now, it looks much better. It works the same but now, you tell the compiler like this:</p>
+<p class="western">&nbsp;</p>
+<p class="western">check something, if is true. Otherwise check something else if is true. Otherwise check something else if is true &hellip; and so on... You can get as many else if clauses as you want.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">When you have only two cases to check you can get rid of the second &ldquo;if&rdquo; and the condition parathesis because you have one condition or else, implicitly, the opposite condition. Example:</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> number = 10;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (number &lt; 10) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is equal to 10");</p>
+<p class="western">}</p>
+<p class="western"><strong>else</strong>{</p>
+<p class="western">System.<em><strong>out</strong></em>.println("number is greater than 10");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">In other words: if the first condition is not true than any other scenario must be true. You don't need to check a second condition, just go ahead inside the &ldquo;else&rdquo; statement. If the first condition would be true any other scenario is not so don't go inside the &ldquo;else&rdquo; statement.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><u><strong>Scanner class</strong></u></p>
+<p class="western">&nbsp;</p>
+<p class="western">So far we have compiled code that we specified inside the main method. But that seems a one way ticket. What can we do if we would like a user to interact with the code and calculate results according with user's input? That's why we have the Scanner class. We remember that Java has many helping classes for different scenarios that we can import when needed. We also remember that classes are blueprints for objects. To make a new object from that blueprint we need to assign it a name of our choice and tell the compiler to create a <strong>new </strong>object with that name. Let's to that.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Scanner <u>ourScanner</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">&nbsp;</p>
+<p class="western">Scanner starts with upper case letters so it must be a class. So we create a new object named &ldquo;ourScanner&rdquo; from the blueprint of that class. It will be able to access the proprieties of that class with the help of the methods created in that class. We tell the compiler that &ldquo;ourScanner&rdquo; is a Scanner by writing &ldquo;Scanner ourScanner&rdquo;. Like &ldquo;Phone myPhone&rdquo; or &ldquo;Phone johny&rdquo;. We know these phones are phones because we identified them as being phones. The only thing is that we do know yet what type of phone it is. It might be a specific type of phone. So we create the copy of the phone with specific parameters in mind. In our case we create &ldquo;ourScanner&rdquo; with the template of a specific Scanner that has a parameter (System.in). That parameter is actually the type of constructor that the Scanner class invokes but for the sake of simplicity we will not go into more detail at this point. The Scanner class is esentially a reader. By placing the parameter &ldquo;System.in&rdquo; we tell the constructor of Scanner class to take the input from &ldquo;System.in&rdquo;</p>
+<p class="western">&nbsp;</p>
+<p class="western">You already know what System.out.print() does. The Scanner will use the System class as well but this time with the instance of &ldquo;in&rdquo;. A bit confusing we know, but we use an object that makes use of another object as we discussed earlier.</p>
+<p class="western">&nbsp;</p>
+<p class="western">So ourScanner was instantiated as a Scanner of the type Scanner(System.in). So far so good apart from the fact that out compiler does not know yet where to look from the resources of our Scanner. So we have to import it in our working class to find the refrence.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Write inside your main class:</p>
+<p class="western">&nbsp;</p>
+<p class="western">Scanner <u>ourScanner</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">&nbsp;</p>
+<p class="western">The name Scanner will be highlighted in red. Click over the name and a helper dialog will appear. Choose &ldquo;import Scanner(java.util)&rdquo; by clicking on it. Now Eclipse imported the package Scanner inside your own package and your class knows where to look for it.</p>
+<p class="western">&nbsp;</p>
+<p class="western">We now can use ourScanner as a new Scanner object and use the methods available.</p>
+<p class="western">&nbsp;</p>
+<p class="western">We know that to invoke a method from a newly created object we write the name followed by dot &ldquo;.&rdquo; character. Let's do that.</p>
+<p class="western">&nbsp;</p>
+<p class="western">ourScanner.</p>
+<p class="western">&nbsp;</p>
+<p class="western">We can see when we type &ldquo;.&rdquo; the suggestion dialog appeared with the methods available. We either choose from the list or type: nextLine();</p>
+<p class="western">As a useful tip, when chossing a method look at the long description of the method or the type of data it uses. In our case, nexLine() is returns the data into a String.<strong> If we want to use what it returns we need to store it in a String.</strong></p>
+<p class="western">&nbsp;</p>
+<p class="western">Let's create a String to store the input from the keyboard that is brought to us by the Scanner created.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Scanner <u>ourScanner</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">String input = ourScanner.nextLine();</p>
+<p class="western">System.<em><strong>out</strong></em>.println(input);</p>
+<p class="western">&nbsp;</p>
+<p class="western">Run the code. Now the compiler is waiting from an outside input. Click on the window where normally you see the code that is run. Write something and press enter. Great! The input from you was printed out again. Lets review what we did.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Scanner <u>ourScanner</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>); &rarr; we imported and created a new Scanner</p>
+<p class="western">&nbsp;</p>
+<p class="western">String input = ourScanner.nextLine(); &rarr; we stored what the method was returning in a String</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(input); &rarr; we printed out the content of our String.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Methods will calculate a code placed inside them. Some type will return a result of a certain type some of them will just alter already existing variables. A good practice is to check what type of method you are dealing with. If is returning something you need a valid type of variable or object to store that information and use it. You can always Google a method or a class to understand better what it can do or how much it can do.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Examples of using Scanner class:</p>
+<p class="western">&nbsp;</p>
+<p class="western">Scanner <u>ourScanner</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Please enter a name");</p>
+<p class="western">String name = ourScanner.nextLine(); &rarr; nextLine() returns a String</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println("Please enter an age");</p>
+<p class="western"><strong>int</strong> age = ourScanner.nextInt(); &rarr; nextInt() returns an int</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(name + " is " + age + " years old ");</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">Exercises 2.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.1 Arrange the numbers with &ldquo;()&rdquo; in : <u>System</u>.<em><strong>out</strong></em>.println(2+4*2+4/2-3); so the result will be 8;</p>
+<p class="western">2.2 Use the following variables. Divide each one with the other. Store the results in other variables and multiply them. Print out the result</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> one = 10;</p>
+<p class="western"><strong>int</strong> two = 20;</p>
+<p class="western"><strong>int</strong> three = 30;</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.3 The formulae for the area of a circle is pi*r*r. . Write the area of a circle with r=5. Use variables to store the numbers and print out the area of the circle.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.4 You have 5, 90, 5694857395, 545.3435 . How can you place them in a String? Multiply the first two numbers and devide the second two. Print out results.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.5 Take several Strings of your choice and several double and int variables. Concatenate al together and create a a print statement like &ldquo;2 apples are 21.23 by 24.45 cm&rdquo;</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.6 Solve the equation: -5x + 20 = 25 using variables. Print out the equation and the result.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.7 Create two Strings. Add them in a third String. Print out the third. Use other arithmetical operators and check what happends.</p>
+<p class="western">2.8 A car dealer has 2 red cars, 4 white cars.</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> int</strong> redCar = 2;</p>
+<p class="western"><strong>int</strong> whiteCar = 4;</p>
+<p class="western">&nbsp;</p>
+<p class="western">Calculate total of cars. Calculate total of wheels from the cars. Calculate total of white cars using total number of cars.</p>
+<p class="western">2.9 You have 5 slices of pizza for 3 people.</p>
+<p class="western"><strong>int</strong> pizzaSlices = 5;</p>
+<p class="western"><strong>int</strong> people = 3;</p>
+<p class="western">How many slices each person will have? Use double and int values. See the diffrence.</p>
+<p class="western">How many slices will be left extra after each person received equal share? Use modulo to calculate. Use int and double values. See the diffrence.</p>
+<p class="western">Now check for a huge pizza with 234 slices for 21 people.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.10 Use modulo (%) to print out the last digit of number 234. Bonus: repeat the process to get all the numbers in 234. Hint: dividing by 10 and storing the result in an int will help you.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.11 You have the following:</p>
+<p class="western"><strong>int</strong> one = 1;</p>
+<p class="western">String quote = "I got 99 problems but this ain't";</p>
+<p class="western">System.<em><strong>out</strong></em>.println(quote + " " + one++);</p>
+<p class="western">What do you think will be printed out? Try and see. Explain the results. Increment &ldquo;one&rdquo; again after the &ldquo;syso&rdquo; and print out again:</p>
+<p class="western">System.<em><strong>out</strong></em>.println(quote + " " + one);</p>
+<p class="western">See the results. Try to explain what happened.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.12 Have a &ldquo;Hello&rdquo; String and an int variable. Print out &ldquo;Hello&rdquo; several times. Use the int as a counter. Print out how many times hello was displayed.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.13 You have a pizza with 5 slices. Use this String: String shout = "I got one slice"</p>
+<p class="western">Print out the String 4 times. How can you use &ldquo;decrement --&rdquo; to see how many slices are left?</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.14 You have: <strong>int</strong> number = 24;</p>
+<p class="western"><strong>int</strong> numberTwo = 30;</p>
+<p class="western"><strong>if</strong>(){</p>
+<p class="western">System.out.println("Correct");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">Check the tow number with all the relational operators. Add more variables of double, long and float.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.15 You have: String name = "John";</p>
+<p class="western">String nameTwo = "Alice";</p>
+<p class="western">String nameThree = "john";</p>
+<p class="western">&nbsp;</p>
+<p class="western">Compare the Strings between them with simple &ldquo;if&rdquo; clauses and print out results.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.16 Use the exercise from 2.15, this time with &ldquo;!&rdquo; not operator.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.17 You have shoes of 32 and 42 size. The smaller size comes in black and white colors. The black color is for dancing, the white for weddings. Your choice are the white shoes. Write it in code. Use relational operators and &ldquo;if&rdquo; clause inside another &ldquo;if&rdquo; clause.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.18 Compare two variables 23.2 and 22.6 using all relational operators and print out if smaller, equal, or larger. Increment a variable in one of the cases.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.19 You have two Strings: String one = "1";</p>
+<p class="western">String two = "1";</p>
+<p class="western">Compare the two and print &ldquo;they are equal&rdquo; in case they are.</p>
+<p class="western">2.20 Use a logical operator to check if number 10 is between 5 and 15.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.21 Use logical operator to check is String &ldquo;john&rdquo; is equal with &ldquo;John&rdquo; and &ldquo;Alice&rdquo;</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.22 Check if 22.20 is between 20 and 22.21. Print out a message.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.23 Check if if 19 is between 18 and 22 and between 10 and 40. Print out a message</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.24 Check if String &ldquo;20&rdquo; is equal to &ldquo;19&rdquo; and &ldquo;33&rdquo;.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.25 Print out &ldquo;it is&rdquo; statement if number 45.34 is between 22 and 50 or between 25 and 22.5</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.26 Check if number 3546 is between 100 and 1000 or between 100 and 10000 or between 100 and 100000. Use a variable to store repeting numbers.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.27 Check if 100%3 is between 20 and 50. Print out results.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.28 Increment a variable if number 10 is between 5 and 10.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.29 Print out a message if Strings: &ldquo;John&rdquo;,&rdquo;Alice&rdquo; are equal or &ldquo;alice&rdquo; and &ldquo;Alice&rdquo; are equal.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.30 If Strings: &ldquo;Hello&rdquo; and &ldquo;Hello are equal, check if number 20 is an even number and print &ldquo;it is&rdquo; if it is. Use if clause inside another if.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.31 Create an object Scanner named &ldquo;sc&rdquo;. Print out the input you receive from your keyboard.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.32 Use &ldquo;sc&rdquo; Scanner. Use sc.nextInt() method and input any number up to 100. Check if the number is between 0 and 50 or 50 and 100. Print out a message. Print out a welcome message with &ldquo;enter a number&rdquo;</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.33 Use &ldquo;sc&rdquo; Scanner. Enter a number from keyboard and then a name. Enter messages asking for a number and a name</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.34 Use &ldquo;sc&rdquo; Scanner. Enter a number from keyboard. Add the number to 50. Check if it is between 100 and 300. Print out messages in case it is. Use variables to store input and results</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.34 Use &ldquo;sc&rdquo; Scanner. Choose a String. Enter a String from keyboard. Check if the two Strings are equal. Print out message.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.35 Continue exercise 2.34 and choose also an int. Enter a number from keyboard. Check if both number and String entered are the same. Print message if they are. Increment a variable if they are.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.36 Use Scanner. Insert multiple times a word from keyboard after a print out message &ldquo;Enter a word&rdquo;. Concatenate all the words in a String and print it out. Change the message to &ldquo;Enter a letter&rdquo;. Concatenate all letters in a word using print() and not println().</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.37 Use Scanner. Insert multiple numbers from keyboard. Compare if each one of the numbers is smaller than the other. Print out a message if it is.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.38 Use Scanner. Insert multiple times words from keyboard. Check if they are equal.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.39 Use Scanner. Insert a number from keyboard. Check if it is an even number. Check if is an odd number. Hint: use %</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.40 Use Scanner. Insert a number from keyboard. Use a variable and add it to 100. Add another variable and substract the previous to 20. Print out the final variable.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.41 Use Scanner. Use a boolean without initializing it. Enter a number from keyboard. If is bigger than 20 set the boolean to false.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.42 Continue exercise 2.31 with an &ldquo;else&rdquo; clause. Set the boolean to true inside of it.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.43 Use a boolean and Scanner. Print out a message: &ldquo;Insert a number up to 10&rdquo;. Use Scanner to insert a number. If the number is between 2 and 5 set boolean to false. Else, set it to true. If boolean is false print out: &ldquo;Enter a number&rdquo;. If is true, print out: &ldquo;Enter a name&rdquo;.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.44 Continue exercise 2.43. After &ldquo;Enter a number&rdquo; and &ldquo;Enter a name&rdquo; use Scanner to insert either a number or a word. Print out the results.</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.45 Verify if String &ldquo;word&rdquo; is equal to String &ldquo;Word&rdquo;. Use a boolean and set it to either true or false in one or the the other case.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.46 You have the following code:</p>
+<p class="western">String str = <strong>new</strong> String("Hello");</p>
+<p class="western">Why was possible to initialize the String this way?</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Return Value :" );</p>
+<p class="western">System.<em><strong>out</strong></em>.println(str.toUpperCase() );</p>
+<p class="western">Run the code. Google the method toUpperCase() and other available methods from String. Is there a toLowerCase() method?</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.47 Use Scanner &ldquo;sc&rdquo;. Use sc.nextLine().toUpperCase() and print the result inserted by the keyboard.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.48 Use Scanner. Use a boolean. Write with the keyboard &ldquo;red&rdquo; or &ldquo;green&rdquo;. Set the boolean true or false according to what was received from the keyboard. Check the boolean and print out &ldquo;car is moving&rdquo; or &ldquo;car is stopped&rdquo; according to it.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.49 Use Scanner. Use boolean. Use the Scanner to enter a number. If the number is even set the boolean to true. If the number is not even(odd) use a variable int to increment and set boolean to false. Print out the variable and the boolean outside the if-else clause.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.50 Use 4 numbers: 20, 34, 46, 65. Check with multiple else-if clauses if another number:44 is smaller than the others.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.51 You have 4 pencils of different color. Check if another pencil, a &ldquo;red&rdquo; one is equal to the other ones using else-if</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.52 Use Scanner. Ask in a print out to enter a number of 0 or 1. Do it 4 times. Store all the input adding it in a variable. Verify with &ldquo;else-if &ldquo; if the total sum of numbers inserted is either 0,1,2,3 or 4. Print out a message in every else-if .</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.53 Use 3 Strings and 3 numbers. Use all the combinations possible between them in if-else clause.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.54 Use Scanner. Enter a number with the keyboard using the scanner. Print out asking for a second number between 0 and 5. Use else-if clause to check if the number was 1,2,3 or 4. Increment the first number inside the first if, decrement in the second &ldquo;if&rdquo;, add by 10 at the third, and apply %2 on the forth. Print out the number to see which one of the else-if clause was applied to it.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.55 Use Scanner. Enter a number with keyboard asking with print out the number to be under 100. Check if the number is smaller or bigger than 50. Set a boolean on true or false depending of the check. Repeat the process and use a second boolean. Compare the booleans checking the 4 possibilities in an if-else clause.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.56 Use 3 Strings &ldquo;white, red, yellow&rdquo; and 3 Strings &ldquo;flower, car, shoes&rdquo;. Combine them toghether to match: String match = &ldquo;red car&rdquo;. Use equal and ((white + &ldquo; &ldquo; + yellow).equals(match)) in else-if clauses.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.57 You have String stopSign = &ldquo;yellow&rdquo;. Use else-if clause to check if is &ldquo;yellow, red, or green&rdquo;.</p>
+<p class="western">Print out a message in any of the cases.</p>
+<p class="western">2.58 You have 4 numbers: 4.5 , 4.4, 3.4 , 6.4 Compare the first with the others in else-if clause to see if it is bigger than others. Print out a message for every combination.</p>
+<p class="western">&nbsp;</p>
+<p class="western">Solutions exercises 1:</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.1 <strong>package</strong> test;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> public</strong> <strong>class</strong> Test {</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>public</strong> <strong>static</strong> <strong>void</strong> main(String[] args) {</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Hello world");</p>
+<p class="western">}</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.2 &ldquo;;&rdquo; after package test missing</p>
+<p class="western">&ldquo;{}&rdquo; missing from main method</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> package</strong> test;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong> public</strong> <strong>class</strong> Test {</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>public</strong> <strong>static</strong> <strong>void</strong> main(String[] args) {</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.print("Hello world");</p>
+<p class="western">}</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.4 System.<em><strong>out</strong></em>.println("I");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("will");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("become");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("a");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("g");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("r");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("e");</p>
+<p class="western">System.<em><strong>out</strong></em>.print("a");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("t");</p>
+<p class="western">System.<em><strong>out</strong></em>.println("programmer");</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.5 System.<em><strong>out</strong></em>.print(john);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(occupation);</p>
+<p class="western">System.<em><strong>out</strong></em>.print(mark);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(occupation);</p>
+<p class="western">System.<em><strong>out</strong></em>.print(alice);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(occupation);</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.6 <strong>int</strong> number = 3;</p>
+<p class="western"><strong>double</strong> decimalNumber = 3.20;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(number);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(decimalNumber);</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.7 System.<em><strong>out</strong></em>.println(myDog);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(number);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(times);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(bigger);</p>
+<p class="western">&nbsp;</p>
+<p class="western">1.8 System.<em><strong>out</strong></em>.print(plus);</p>
+<p class="western">System.<em><strong>out</strong></em>.print(line);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(plus);</p>
+<p class="western">System.<em><strong>out</strong></em>.print(plus);</p>
+<p class="western">System.<em><strong>out</strong></em>.print(empty);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(plus);</p>
+<p class="western">System.<em><strong>out</strong></em>.print(plus);</p>
+<p class="western">System.<em><strong>out</strong></em>.print(line);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(plus);</p>
+<p class="western">&nbsp;</p>
+<p class="western">Solutions exercises 2</p>
+<p class="western">&nbsp;</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.1 System.<em><strong>out</strong></em>.println((2+4)*2+4/(2-3));</p>
+<p class="western">2.2 <strong>int</strong> one = 10;</p>
+<p class="western"><strong>int</strong> two = 20;</p>
+<p class="western"><strong>int</strong> three = 30;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> twoDivideOne = two/one;</p>
+<p class="western"><strong>int</strong> threeDivideTwo = three/one;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> result = twoDivideOne*threeDivideTwo;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(result);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.3 <strong>int</strong> radius = 5;</p>
+<p class="western"><strong>double</strong> pi = 3.14;</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(pi*radius*radius);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.4 String <u>numberInString</u> = "3434546";</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.7 String name = "Robin";</p>
+<p class="western">String surname = "Hood";</p>
+<p class="western">String s = name + surname;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(s);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.8 <strong>int</strong> redCar = 2;</p>
+<p class="western"><strong>int</strong> whiteCar = 4;</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(redCar + whiteCar);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(redCar*4 + whiteCar*4); // or // we add another variable: <strong>int</strong> wheels = 4;</p>
+<p class="western">System.<em><strong>out</strong></em>.println((redCar + whiteCar) * wheels);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(redCar + whiteCar - redCar);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.9 <strong>int</strong> pizzaSlices = 5;</p>
+<p class="western"><strong>int</strong> people = 3;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>int</strong> slicePerPerson = pizzaSlices/people;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(slicePerPerson);</p>
+<p class="western"><strong>int</strong> sliceLeft = pizzaSlices%people;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(sliceLeft);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.10 <strong>int</strong> number = 235;</p>
+<p class="western"><strong>int</strong> lastNumber = 235%10;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(lastNumber);</p>
+<p class="western"><strong>int</strong> number2 = number/10;</p>
+<p class="western"><strong>int</strong> lastNumber2 = number2%10;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(lastNumber2);</p>
+<p class="western"><strong>int</strong> number3 = number2/10;</p>
+<p class="western"><strong>int</strong> lastNumber3 = number3%10;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(lastNumber3);</p>
+<p class="western">System.<em><strong>out</strong></em>.println("the number was: " + lastNumber3 + lastNumber2 + lastNumber);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.11 <strong>int</strong> one = 1;</p>
+<p class="western">String quote = "I got 99 problems but this ain't";</p>
+<p class="western">System.<em><strong>out</strong></em>.println(quote + " " + one++);</p>
+<p class="western">/* one is printed while incrementing. It is displayed</p>
+<p class="western">as it was before */</p>
+<p class="western">one++;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(quote + one);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.12 <strong>int</strong> one = 0;</p>
+<p class="western">String hello = "Hello";</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(hello);</p>
+<p class="western">one++;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(hello);</p>
+<p class="western">one++;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(one);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.13 <strong>int</strong> slices = 5;</p>
+<p class="western">String shout = "I got one slice";</p>
+<p class="western">System.<em><strong>out</strong></em>.println(shout);</p>
+<p class="western">slices--;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(shout);</p>
+<p class="western">slices--;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(shout);</p>
+<p class="western">slices--;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(shout);</p>
+<p class="western">slices--;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(slices);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.15 , 2.16 <strong>if</strong> (name.equals(nameThree)){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("the same");</p>
+<p class="western">}</p>
+<p class="western"><strong>if</strong> (!name.equals(nameThree)){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("not the same");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.17 <strong>int</strong> shoeSmall = 32;</p>
+<p class="western"><strong>int</strong> shoeBig = 42;</p>
+<p class="western"><strong>int</strong> shoeChoice = 32;</p>
+<p class="western">String colorChoice = "white";</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (shoeChoice == 32){</p>
+<p class="western"><strong>if</strong>(colorChoice.equals("white")){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("your shoes are for weddings!");</p>
+<p class="western">}</p>
+<p class="western"><strong>if</strong>(colorChoice.equals("black")){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("your shoes are for dancing");</p>
+<p class="western">}</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.19 String one = "1";</p>
+<p class="western">String two = "1";</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (one.equals(two)){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("they are equal");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.20 <strong>int</strong> number = 10;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong>(number &gt;5 &amp;&amp; number &lt;15){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("it is");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.24 String number = "20";</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong>(number.equals("19") &amp;&amp; number.equals("33")){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("it is");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.25 <strong>double</strong> number = 45.34;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong>(number&gt;22 &amp;&amp; number &lt;50 || number&gt;25 &amp;&amp; number &lt;22.5){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("it is");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.31 Scanner sc = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(sc.nextLine());</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.32</p>
+<p class="western">Scanner sc = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">System.<em><strong>out</strong></em>.println("enter a number");</p>
+<p class="western"><strong>int</strong> numberReceived = sc.nextInt();</p>
+<p class="western"><strong>if</strong>(numberReceived &gt; 0 &amp;&amp; numberReceived&lt;50 || numberReceived &gt;50 &amp;&amp; numberReceived &lt;100){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("it is");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.37 Scanner sc = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">System.<em><strong>out</strong></em>.println("enter a number");</p>
+<p class="western"><strong>int</strong> numberReceived = sc.nextInt();</p>
+<p class="western"><strong>int</strong> numberReceived2 = sc.nextInt();</p>
+<p class="western"><strong>int</strong> numberReceived3 = sc.nextInt();</p>
+<p class="western"><strong>if</strong>(numberReceived &lt; numberReceived2 || numberReceived2 &lt; numberReceived3){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("it is");</p>
+<p class="western">}</p>
+<p class="western">2.41, 2.42 <strong>boolean</strong> check;</p>
+<p class="western">Scanner sc = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">System.<em><strong>out</strong></em>.println("enter a number");</p>
+<p class="western"><strong>int</strong> numberReceived = sc.nextInt();</p>
+<p class="western"><strong>if</strong>(numberReceived &gt; 20){</p>
+<p class="western">check = <strong>false</strong>;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(check);</p>
+<p class="western">}<strong>else</strong>{</p>
+<p class="western">check = <strong>true</strong>;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(check);</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.43, 2.44 <strong>boolean</strong> check;</p>
+<p class="western">Scanner sc = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">System.<em><strong>out</strong></em>.println("insert a number up to 10");</p>
+<p class="western"><strong>int</strong> numberReceived = sc.nextInt();</p>
+<p class="western"><strong>if</strong>(numberReceived &gt; 2 &amp;&amp; numberReceived &lt;5){</p>
+<p class="western">check = <strong>false</strong>;</p>
+<p class="western">}<strong>else</strong>{</p>
+<p class="western">check = <strong>true</strong>;</p>
+<p class="western">}</p>
+<p class="western"><strong>if</strong>(check = <strong>true</strong>){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("enter a number");</p>
+<p class="western"><strong>int</strong> number = sc.nextInt();</p>
+<p class="western">System.<em><strong>out</strong></em>.println(number);</p>
+<p class="western">}<strong>else</strong>{</p>
+<p class="western">System.<em><strong>out</strong></em>.println("enter a name");</p>
+<p class="western">String word = sc.nextLine();</p>
+<p class="western">System.<em><strong>out</strong></em>.println(word);</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.46 String is an object, it can be created with keyword <strong>new</strong>. Java will will do it in the background if you don't do it but only because Strings have a special treatment.</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.47 Scanner <u>sc</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">String line = sc.nextLine().toUpperCase();</p>
+<p class="western">System.<em><strong>out</strong></em>.println(line);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.49 <strong>boolean</strong> check;</p>
+<p class="western"><strong>int</strong> increment = 0;</p>
+<p class="western">Scanner <u>sc</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western"><strong>int</strong> number = sc.nextInt();</p>
+<p class="western"><strong>if</strong>(number%2 ==0){</p>
+<p class="western">check = <strong>true</strong>;</p>
+<p class="western">}<strong>else</strong>{</p>
+<p class="western">increment++;</p>
+<p class="western">check = <strong>false</strong>;</p>
+<p class="western">}</p>
+<p class="western">System.<em><strong>out</strong></em>.println(check + " " + increment);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.54 Scanner sc = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">System.<em><strong>out</strong></em>.println("enter a number");</p>
+<p class="western"><strong>int</strong> number = sc.nextInt();</p>
+<p class="western">System.<em><strong>out</strong></em>.println("enter another number between 0 and 5");</p>
+<p class="western"><strong>int</strong> numberTwo = sc.nextInt();</p>
+<p class="western"><strong>if</strong>(numberTwo ==1){</p>
+<p class="western">number++;</p>
+<p class="western">}<strong>else</strong> <strong>if</strong> (numberTwo == 2){</p>
+<p class="western">number--;</p>
+<p class="western">}<strong>else</strong> <strong>if</strong> (numberTwo == 3){</p>
+<p class="western">number = number +10;</p>
+<p class="western">}<strong>else</strong> <strong>if</strong> (numberTwo == 4 ){</p>
+<p class="western">number = number%2;</p>
+<p class="western">}</p>
+<p class="western">System.<em><strong>out</strong></em>.println(number);</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.55 <strong>boolean</strong> check;</p>
+<p class="western"><strong>boolean</strong> checkTwo;</p>
+<p class="western">String message = "enter a number up to 100";</p>
+<p class="western">Scanner <u>sc</u> = <strong>new</strong> Scanner(System.<em><strong>in</strong></em>);</p>
+<p class="western">System.<em><strong>out</strong></em>.println(message);</p>
+<p class="western"><strong>int</strong> number = sc.nextInt();</p>
+<p class="western"><strong>if</strong> (number &lt; 50) {</p>
+<p class="western">check = <strong>false</strong>;</p>
+<p class="western">} <strong>else</strong></p>
+<p class="western">check = <strong>true</strong>;</p>
+<p class="western">&nbsp;</p>
+<p class="western">System.<em><strong>out</strong></em>.println(message);</p>
+<p class="western"><strong>int</strong> numberTwo = sc.nextInt();</p>
+<p class="western"><strong>if</strong> (numberTwo &lt; 50) {</p>
+<p class="western">checkTwo = <strong>false</strong>;</p>
+<p class="western">} <strong>else</strong></p>
+<p class="western">checkTwo = <strong>true</strong>;</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong> (check == <strong>false</strong> &amp;&amp; checkTwo == <strong>true</strong>) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("case 1");</p>
+<p class="western">} <strong>else</strong> <strong>if</strong> (check == <strong>false</strong> &amp;&amp; checkTwo == <strong>false</strong>) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("case 2");</p>
+<p class="western">} <strong>else</strong> <strong>if</strong> (check == <strong>true</strong> &amp;&amp; checkTwo == <strong>true</strong>) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("case 3");</p>
+<p class="western">} <strong>else</strong> <strong>if</strong> (check == <strong>false</strong> &amp;&amp; checkTwo == <strong>true</strong>) {</p>
+<p class="western">System.<em><strong>out</strong></em>.println("case 4");</p>
+<p class="western">}</p>
+<p class="western">&nbsp;</p>
+<p class="western">2.56 String match = "red car";</p>
+<p class="western">String car = "car";</p>
+<p class="western">String red = "red";</p>
+<p class="western">&nbsp;</p>
+<p class="western"><strong>if</strong>((red + " " + car).equals(match) ){</p>
+<p class="western">System.<em><strong>out</strong></em>.println("is a match");</p>
+<p class="western">}</p>

@@ -1,0 +1,15 @@
+.mvc-description{
+
+  padding: 20px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.mvc-description p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+.gist{
+  width: 90%;
+  margin: 0 auto;
+}
